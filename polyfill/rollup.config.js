@@ -1,3 +1,4 @@
+import babel from 'rollup-plugin-babel';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import license from 'rollup-plugin-license';
 import { join } from 'path';
@@ -5,6 +6,9 @@ import { join } from 'path';
 export default {
   input: 'lib/index.mjs',
   plugins: [
+    babel({
+      exclude: 'node_modules/**'
+    }),
     nodeResolve({
       jsnext: true
     }),

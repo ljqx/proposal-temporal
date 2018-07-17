@@ -1,6 +1,6 @@
 {
-  "name": "temporal",
-  "version": "1.0.0",
+  "name": "tc39-proposal-temporal",
+  "version": "1.0.1",
   "description": "TC39 Temporal Proposal Polyfill",
   "main": "index.js",
   "module": "lib/index.mjs",
@@ -28,7 +28,11 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-plugin-external-helpers": "^6.22.0",
     "rollup": "^0.59.1",
+    "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-license": "^0.6.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "tape": "^4.9.1"
